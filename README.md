@@ -61,19 +61,21 @@ have carla server installed , and the framework ros2 with the version "humble"
 
 ## run the carla server
 
-In the carla directory, run the command sh carlaUE4.sh in a terminal
+In the carla directory, run the command "sh carlaUE4.sh" in a terminal
 
 ## how to run ros2 via the bridge using humble
 
 go to the worskpace, open another terminal and run the following command:
-source /opt/ros/humble/setup.bash
-source install/setup.bash
-then run the following command to launch ros2 client: ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py
+"source /opt/ros/humble/setup.bash"
+
+"source install/setup.bash"
+
+then run the following command to launch ros2 client: "ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py"
 
 # Run the program 
 
-while ros2 is running enter the next command: source install/setup.bash
-then run the subcriber : ros2 run carla_data_manager lidar_subscriber
+while ros2 is running enter the next command: "source install/setup.bash"
+then run the subcriber : "ros2 run carla_data_manager lidar_subscriber"
 
 
 ## Badges
