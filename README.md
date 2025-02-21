@@ -65,10 +65,10 @@ In the carla directory, run the command "sh carlaUE4.sh" in a terminal
 
 ## how to run ros2 via the bridge using humble
 
-go to the worskpace, open another terminal and run the following command:
-"source /opt/ros/humble/setup.bash"
+go to the worskpace, open another terminal and run the following commands:
+"source /opt/ros/humble/setup.bash" ;
 
-"source install/setup.bash"
+"source install/setup.bash" .
 
 then run the following command to launch ros2 client: "ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py"
 
