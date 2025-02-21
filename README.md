@@ -5,7 +5,7 @@
 ###   password: 123456789
 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 ## Add your filesjkjklkl
 
 - [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
@@ -51,10 +51,30 @@ When you're ready to make this README your own, just edit this file and use the 
 Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
 ## Name
-Choose a self-explaining name for your project.
+Lidar project: recorder and Uploader
 
 ## Description
 Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+
+## Precondition
+have carla server installed , and the framework ros2 with the version "humble"
+
+## run the carla server
+
+In the carla directory, run the command sh carlaUE4.sh in a terminal
+
+## how to run ros2 via the bridge using humble
+
+go to the worskpace, open another terminal and run the following command:
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+then run the following command to launch ros2 client: ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py
+
+## how to capture the lidardata 
+
+while ros2 is running enter the next command: source install/setup.bash
+then run the subcriber : ros2 run carla_data_manager lidar_subscriber
+
 
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
