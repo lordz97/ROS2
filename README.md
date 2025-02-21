@@ -6,7 +6,7 @@
 
 
 
-## Add your filesjkjklkl
+## Add your files
 
 - [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
 - [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
@@ -70,7 +70,7 @@ source /opt/ros/humble/setup.bash
 source install/setup.bash
 then run the following command to launch ros2 client: ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py
 
-## how to capture the lidardata 
+# Run the program 
 
 while ros2 is running enter the next command: source install/setup.bash
 then run the subcriber : ros2 run carla_data_manager lidar_subscriber
@@ -103,6 +103,10 @@ You can also document commands to lint the code or run tests. These steps help t
 
 ## Authors and acknowledgment
 Show your appreciation to those who have contributed to the project.
+Harisson Friedman ZEUFACK
+Prosper Vieiry MBE TENE
+Stella Raissa DJOMO NGUEYIM
+Donald Elvis SADJOU
 
 ## License
 For open source projects, say how it is licensed.
